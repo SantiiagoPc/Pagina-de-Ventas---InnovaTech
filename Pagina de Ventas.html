@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conecta InnovaTech 2025 - InnovaTech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg { background: linear-gradient(135deg, #0072ce 0%, #00a651 100%); }
+        .btn-primary { background-color: #0072ce; color: white; transition: all 0.3s; }
+        .btn-primary:hover { background-color: #005999; transform: translateY(-2px); }
+        .btn-secondary { background-color: #00a651; color: white; transition: all 0.3s; }
+        .btn-secondary:hover { background-color: #008f4b; transform: translateY(-2px); }
+        /* Modal styles */
+        .modal-bg {
+            background: rgba(0,0,0,0.6);
+            position: fixed;
+            top:0; left:0; right:0; bottom:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal {
+            background: white;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 90%;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .modal h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #0072ce;
+        }
+        .modal label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        .modal input, .modal select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .modal button {
+            cursor: pointer;
+        }
+        .close-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #888;
+            border: none;
+            background: transparent;
+        }
+        .close-btn:hover {
+            color: #0072ce;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed">
+    <!-- Header -->
+    <header class="hero-bg text-white py-6">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <img src=https://i.imgur.com/khHvmcI.png" alt="Logotipo moderno de Conecta InnovaTech 2025 con colores azul y verde representando innovación y confianza en el sector tecnológico" class="mb-4 rounded-full shadow-lg" />
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-2">Conecta InnovaTech 2025</h1>
+            <p class="text-lg md:text-xl">Networking Único para Innovadores Tecnológicos</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">¡Conecta, Innova y Crece!</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">Únete a profesionales, startups y líderes en tecnología. Fortalece tu red, descubre oportunidades de negocio y aprende con expertos en IA y automatización.</p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c4d1b8c9-21cc-4fcc-86b5-0d8aa227e30e.png" alt="Ilustración de profesionales tecnicos interactuando en un evento de networking con laptops y pantallas de presentaciones en un espacio moderno" class="mx-auto mb-8 rounded-lg shadow-lg" />
+            <button class="btn-primary px-8 py-4 text-lg font-semibold rounded-lg shadow-md btn-primary">Regístrate Ahora</button>
+        </div>
+    </section>
+
+    <!-- Sobre InnovaTech -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Sobre InnovaTech Solutions</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fac89295-61e6-4155-af2e-d81995435dc1.png" alt="Equipo colaborativo de InnovaTech Solutions trabajando en proyectos tecnologicos con pantallas y diagramas" class="md:w-1/2 rounded-lg shadow-md mb-6 md:mb-0 md:mr-8" />
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 text-lg mb-4">Empresa colombiana líder en soluciones tecnológicas personalizadas. Con 10+ años de innovación, transformamos procesos y potenciamos el crecimiento empresarial.</p>
+                    <p class="text-gray-600 text-lg">En este evento, Descubre nuestras nuevas soluciones en IA y automatización, y expande tu red estratégica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores y Beneficios -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">¿Por Qué Asistir?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3cef65a-90f1-4384-bc4c-c2ba9564f4c1.png" alt="Icono de una red de conexiones humanas simbolizando networking y alianzas" class="mx-auto mb-4 w-16 h-16" />
+                    <h3 class="font-bold text-lg mb-2">Networking Estratégico</h3>
+                    <p>Conecta con 150-200 líderes en tecnología.</p>
+                </div>
+                <div class="bg-green-100 p-6 rounded-lg text-center shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fee92cf5-7fb7-4654-b546-8f93ea4b4f65.png" alt="Icono de un podio con micrófono representando conferencias y charlas expertas" class="mx-auto mb-4 w-16 h-16" />
+                    <h3 class="font-bold text-lg mb-2">Charlas de Expertos</h3>
+                    <p>Aprende de especialistas en IA y automatización.</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/44655064-e81d-4f1c-8bbd-0052d94a1767.png" alt="Icono de una lampara de idea simbolizando mentorias y guias para startups" class="mx-auto mb-4 w-16 h-16" />
+                    <h3 class="font-bold text-lg mb-2">Mentoría para Startups</h3>
+                    <p>Recibe consejos de mentores experimentados.</p>
+                </div>
+                <div class="bg-green-100 p-6 rounded-lg text-center shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de94059e-b859-4492-a8fb-211374f1ae0f.png" alt="Icono de un apretón de manos representando oportunidades de negocio colaborativas" class="mx-auto mb-4 w-16 h-16" />
+                    <h3 class="font-bold text-lg mb-2">Oportunidades de Negocio</h3>
+                    <p>Expande alianzas y genera leads clave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Precios Accesibles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Estudiantes</h3>
+                    <p class="text-4xl text-green-600 mb-4">$60.000 COP</p>
+                    <p>Con carnet válido</p>
+                </div>
+                <div class="bg-blue-600 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Entrada General</h3>
+                    <p class="text-4xl mb-4">$120.000 COP</p>
+                    <p>Acceso completo al evento</p>
+                </div>
+                <div class="bg-green-600 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Paquete Empresarial</h3>
+                    <p class="text-4xl mb-4">$400.000 COP</p>
+                    <p>Para 4 personas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">No Pierdas Esta Oportunidad</h2>
+            <p class="text-lg text-gray-600 mb-8">Únete a un evento único que impulsará tu carrera y negocio en el sector tech.</p>
+            <button id="openFormBtn" class="btn-secondary px-10 py-4 text-xl font-semibold rounded-lg shadow-md">Reservar Mi Lugar</button>
+        </div>
+    </section>
+
+    <!-- Modal Form -->
+    <div id="modalForm" class="modal-bg" style="display:none;">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button id="closeFormBtn" class="close-btn" aria-label="Cerrar formulario">&times;</button>
+            <h3 id="modalTitle">Formulario de Registro</h3>
+            <form id="registrationForm">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre completo" />
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@correo.com" />
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="Opcional" />
+
+                <label for="category">Categoría</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Profesional">Profesional</option>
+                    <option value="Empresa">Empresa</option>
+                </select>
+
+                <button type="submit" class="btn-primary w-full py-3 font-semibold rounded-lg">Enviar Registro</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="hero-bg text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Conecta InnovaTech 2025 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        const openBtn = document.getElementById('openFormBtn');
+        const closeBtn = document.getElementById('closeFormBtn');
+        const modal = document.getElementById('modalForm');
+        const form = document.getElementById('registrationForm');
+
+        openBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            document.getElementById('name').focus();
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            form.reset();
+        });
+
+        // Close modal if clicking outside the modal content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                form.reset();
+            }
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simple form validation already handled by required attributes
+            // Here you could add AJAX to send data to a server or API
+            alert(`Gracias por registrarte, ${form.name.value}! Nos pondremos en contacto contigo pronto.`);
+            modal.style.display = 'none';
+            form.reset();
+        });
+
+        // Accessibility: close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+
+<attempt_completion>
+
+</attempt_completion>
